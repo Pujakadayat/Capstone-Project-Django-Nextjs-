@@ -53,6 +53,7 @@
 #         model = ProductVariant
 #         fields = ["id","sku","variations","cost_price","selling_price","stock",]
 #         read_only_fields =["id","sku"]
+
 from rest_framework import serializers
 from apps.products.models.product_variant import ProductVariant, VariationValue, VariationType
 

@@ -44,7 +44,7 @@ class UserLoginView(APIView):
         
         phone_number = serializer.validated_data["phone_number"]
         password = serializer.validated_data["password"]
-        user =authenticate(request,username=phone_number,password=password)
+        user =authenticate(request,phone_number=phone_number,password=password)
 
         if not user:
             return Response(

@@ -4,5 +4,6 @@ urlpatterns = [
     path("categories/",include("apps.products.urls.category_urls")),
     path("",include("apps.products.urls.product_urls")),
     path("variants/",include("apps.products.urls.product_variant_urls")),
+        path("brand/",include("apps.products.urls.brand_urls")),
 ]
 

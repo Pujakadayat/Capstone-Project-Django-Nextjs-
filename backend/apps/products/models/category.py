@@ -6,6 +6,7 @@ class ProductCategory(BaseModel):
         name = models.CharField(max_length=100)
         slug = models.SlugField(unique=True,max_length=120)
         sort_order = models.IntegerField(default=0)
+        image = models.ImageField(upload_to="category_images/",blank=True,null=True)
         parent = models.ForeignKey("self",on_delete=models.SET_NULL,null=True,blank=True,related_name="children")
         
         

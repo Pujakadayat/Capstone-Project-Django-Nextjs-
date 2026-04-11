@@ -1,5 +1,6 @@
 from .category_serializer import CategoryListSerializer,CategorySerializer
 from .product_serializer import ProductListSerializer,ProductSerializer
 from .product_variant_serializer import ProductVariant,ProductVariantListSerializer
+from .brand_serializer import BrandSerializer
 
-__all__ = ["ProductVariant","ProductVariantListSerializer","ProductListSerializer","ProductSerializer","CategoryListSerializer","CategorySerializer",]
+__all__ = ["ProductVariant","ProductVariantListSerializer","ProductListSerializer","ProductSerializer","CategoryListSerializer","CategorySerializer","BrandSerializer",]

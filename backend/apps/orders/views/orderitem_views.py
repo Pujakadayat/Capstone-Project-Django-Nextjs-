@@ -9,15 +9,13 @@ from rest_framework import generics
 class OrderItemCreateView(generics.CreateAPIView):
     pagination_class = CustomPagination
     serializer_class = OrderItemWriteSerializer
+    permission_classes = [IsStaffOrCustomer]
 
     def get_queryset(self):
         user = self.request.user
         return OrderItem.objects.filter(is_active=True,order__user=user)
     
-    def get_permissions(self):
-        if self.request.user.is_customer:
-            return [IsCustomerUser()]
-        return [IsStaffUser()]
+  
     
     
 class OrderItemListView(generics.ListAPIView):
