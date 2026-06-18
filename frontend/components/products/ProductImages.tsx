@@ -41,29 +41,4 @@ const ProductImages = () => {
 };
 
 export default ProductImages;
-// "use client";
-
-// import Image from "next/image";
-
-// const ProductImages = ({ image }: { image?: string }) => {
-//   return (
-//     <div>
-//       <div className="relative w-full h-[500px] bg-gray-100 rounded-md overflow-hidden">
-//         {image ? (
-//           <Image
-//             src={image}
-//             alt="product"
-//             fill
-//             className="object-cover"
-//           />
-//         ) : (
-//           <div className="flex items-center justify-center h-full text-gray-400">
-//             No Image
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProductImages;
+          
