@@ -19,35 +19,4 @@ const CustomizeProducts = () => {
 
 export default CustomizeProducts;
 
-// "use client";
 
-// import { ProductVariant } from "@/types/productvariant";
-// import { useState } from "react";
-
-// const CustomizeProducts = ({ variants }: { variants: ProductVariant[] }) => {
-//   const [selected, setSelected] = useState<string | null>(null);
-
-//   return (
-//     <div className="flex flex-col gap-4">
-//       <h4 className="font-medium">Choose Variant</h4>
-
-//       <div className="flex gap-2 flex-wrap">
-//         {variants.map((v) => (
-//           <button
-//             key={v.id}
-//             onClick={() => setSelected(v.id)}
-//             className={`px-4 py-2 border rounded-md text-sm ${
-//               selected === v.id
-//                 ? "bg-black text-white"
-//                 : "bg-white"
-//             }`}
-//           >
-//             {v.variations.map((val) => val.value).join(" / ")}
-//           </button>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CustomizeProducts;
